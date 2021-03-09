@@ -1,6 +1,8 @@
 from django import forms
 from .models import Employee
 
+from django.utils.translation import gettext_lazy as _
+
 
 class EmployeeForm(forms.ModelForm):
 
@@ -8,8 +10,11 @@ class EmployeeForm(forms.ModelForm):
         model = Employee
         fields = ('fullname','mobile','emp_code','position')
         labels = {
-            'fullname':'Full Name',
-            'emp_code':'EMP. Code'
+            'fullname': _('Full Name'),
+            'mobile': _('Full Name'),
+            'emp_code': _('EMP.Code'),
+            'position': _('Position'),
+
         }
 
     def __init__(self, *args, **kwargs):

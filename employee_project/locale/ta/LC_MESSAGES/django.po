@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-09 20:43+0300\n"
-"PO-Revision-Date: 2021-03-09 20:49+0300\n"
+"POT-Creation-Date: 2021-03-09 21:20+0300\n"
+"PO-Revision-Date: 2021-03-09 21:21+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ta\n"
@@ -30,23 +30,37 @@ msgstr "அரபு"
 msgid "Tamil"
 msgstr "தமிழ்"
 
-#: employee_register/templates/employee_register/base.html:34
+#: employee_register/forms.py:13 employee_register/forms.py:14
+#: employee_register/templates/employee_register/employee_list.html:8
+msgid "Full Name"
+msgstr "முழு பெயர்"
+
+#: employee_register/forms.py:15
+msgid "EMP.Code"
+msgstr "பணியாளர் குறியீடு"
+
+#: employee_register/forms.py:16
+#: employee_register/templates/employee_register/employee_list.html:10
+msgid "Position"
+msgstr "நிலை"
+
+#: employee_register/templates/employee_register/base.html:38
 msgid "Register Employee"
 msgstr "பணியாளர் பதிவு"
 
-#: employee_register/templates/employee_register/base.html:38
+#: employee_register/templates/employee_register/base.html:42
 msgid "Employee List"
 msgstr "பணியாளர் பட்டியல்"
 
-#: employee_register/templates/employee_register/base.html:45
+#: employee_register/templates/employee_register/base.html:49
 msgid "Language"
 msgstr "மொழி"
 
-#: employee_register/templates/employee_register/base.html:65
+#: employee_register/templates/employee_register/base.html:69
 msgid "App Title"
 msgstr "பணியாளர் பதிவு"
 
-#: employee_register/templates/employee_register/base.html:66
+#: employee_register/templates/employee_register/base.html:70
 msgid "App Desc"
 msgstr "Multi-Lingual Django App with Bootstrap5 and PostgreSQL"
 
@@ -55,21 +69,13 @@ msgstr "Multi-Lingual Django App with Bootstrap5 and PostgreSQL"
 msgid "Submit"
 msgstr "சமர்ப்பிக்கவும்"
 
-#: employee_register/templates/employee_register/employee_form.html:31
+#: employee_register/templates/employee_register/employee_form.html:30
 msgid "Back to list"
 msgstr "மீண்டும் பட்டியலில்"
-
-#: employee_register/templates/employee_register/employee_list.html:8
-msgid "Full Name"
-msgstr "முழு பெயர்"
 
 #: employee_register/templates/employee_register/employee_list.html:9
 msgid "Mobile"
 msgstr "கைபேசி"
-
-#: employee_register/templates/employee_register/employee_list.html:10
-msgid "Position"
-msgstr "நிலை"
 
 #: employee_register/templates/employee_register/employee_list.html:13
 msgid "Add New"

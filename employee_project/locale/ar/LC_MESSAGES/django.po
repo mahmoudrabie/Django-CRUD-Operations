@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-09 20:43+0300\n"
-"PO-Revision-Date: 2021-03-09 20:47+0300\n"
+"POT-Creation-Date: 2021-03-09 21:20+0300\n"
+"PO-Revision-Date: 2021-03-09 21:22+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ar\n"
@@ -31,23 +31,37 @@ msgstr "العربية"
 msgid "Tamil"
 msgstr "التاميل"
 
-#: employee_register/templates/employee_register/base.html:34
+#: employee_register/forms.py:13 employee_register/forms.py:14
+#: employee_register/templates/employee_register/employee_list.html:8
+msgid "Full Name"
+msgstr "الاسم بالكامل"
+
+#: employee_register/forms.py:15
+msgid "EMP.Code"
+msgstr "الرقم الوظيفي"
+
+#: employee_register/forms.py:16
+#: employee_register/templates/employee_register/employee_list.html:10
+msgid "Position"
+msgstr "الوظيفة"
+
+#: employee_register/templates/employee_register/base.html:38
 msgid "Register Employee"
 msgstr "تسجيل موظف"
 
-#: employee_register/templates/employee_register/base.html:38
+#: employee_register/templates/employee_register/base.html:42
 msgid "Employee List"
 msgstr "قائمة الموظفين"
 
-#: employee_register/templates/employee_register/base.html:45
+#: employee_register/templates/employee_register/base.html:49
 msgid "Language"
 msgstr "اللغة"
 
-#: employee_register/templates/employee_register/base.html:65
+#: employee_register/templates/employee_register/base.html:69
 msgid "App Title"
 msgstr "تسجيل الموظفين"
 
-#: employee_register/templates/employee_register/base.html:66
+#: employee_register/templates/employee_register/base.html:70
 msgid "App Desc"
 msgstr ""
 "تطبيق متعدد اللغات باطار العمل Django يحتوي تقنيات Bootstrap5 و PostgreSQL"
@@ -57,21 +71,13 @@ msgstr ""
 msgid "Submit"
 msgstr "حفظ"
 
-#: employee_register/templates/employee_register/employee_form.html:31
+#: employee_register/templates/employee_register/employee_form.html:30
 msgid "Back to list"
 msgstr "عودة للقائمة"
-
-#: employee_register/templates/employee_register/employee_list.html:8
-msgid "Full Name"
-msgstr "الاسم بالكامل"
 
 #: employee_register/templates/employee_register/employee_list.html:9
 msgid "Mobile"
 msgstr "الجوال"
-
-#: employee_register/templates/employee_register/employee_list.html:10
-msgid "Position"
-msgstr "الوظيفة"
 
 #: employee_register/templates/employee_register/employee_list.html:13
 msgid "Add New"
