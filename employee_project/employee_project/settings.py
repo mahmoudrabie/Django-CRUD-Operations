@@ -28,7 +28,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -60,7 +59,7 @@ ROOT_URLCONF = 'employee_project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [ ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -120,6 +119,9 @@ LANGUAGES = (
     ('ta', _('Tamil')),
 )
 
+LOCALE_PATHS = [
+    os.path.join(BASE_DIR, '/locale')
+]
 
 TIME_ZONE = 'UTC'
 
