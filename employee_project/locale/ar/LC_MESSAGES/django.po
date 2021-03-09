@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-09 20:24+0300\n"
-"PO-Revision-Date: 2021-03-09 18:43+0300\n"
+"POT-Creation-Date: 2021-03-09 20:43+0300\n"
+"PO-Revision-Date: 2021-03-09 20:47+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ar\n"
@@ -19,17 +19,17 @@ msgstr ""
 "&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 "X-Generator: Poedit 2.4.2\n"
 
-#: employee_project/settings.py:117
+#: employee_project/settings.py:107
 msgid "English"
-msgstr ""
+msgstr "الانجليزية"
 
-#: employee_project/settings.py:118
+#: employee_project/settings.py:108
 msgid "Arabic"
-msgstr ""
+msgstr "العربية"
 
-#: employee_project/settings.py:119
+#: employee_project/settings.py:109
 msgid "Tamil"
-msgstr ""
+msgstr "التاميل"
 
 #: employee_register/templates/employee_register/base.html:34
 msgid "Register Employee"
@@ -42,6 +42,15 @@ msgstr "قائمة الموظفين"
 #: employee_register/templates/employee_register/base.html:45
 msgid "Language"
 msgstr "اللغة"
+
+#: employee_register/templates/employee_register/base.html:65
+msgid "App Title"
+msgstr "تسجيل الموظفين"
+
+#: employee_register/templates/employee_register/base.html:66
+msgid "App Desc"
+msgstr ""
+"تطبيق متعدد اللغات باطار العمل Django يحتوي تقنيات Bootstrap5 و PostgreSQL"
 
 #: employee_register/templates/employee_register/employee_form.html:25
 #: employee_register/views.py:14

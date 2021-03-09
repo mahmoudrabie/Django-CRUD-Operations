@@ -1,5 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+{% load i18n %} 
+{% get_current_language as LANGUAGE_CODE %}
+{% get_current_language_bidi as LANG_DIR %}
+{% get_available_languages as LANGUAGES %}
+{% get_language_info_list for LANGUAGES as languages %}
+<html lang="{{ LANGUAGE_CODE }}" dir="{% if LANG_DIR %}rtl{% else %}ltr{% endif %}">
 
 <head>
     <meta charset="UTF-8">
@@ -12,14 +17,13 @@
     -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        {% load i18n %} 
-        {% get_current_language as LANGUAGE_CODE %}
-        {% get_available_languages as LANGUAGES %}
-        {% get_language_info_list for LANGUAGES as languages %}
+        
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Django (CRUD+PostgreSQL+Bootstrap) App</a>
  
@@ -30,16 +34,16 @@
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link {% if 'insert' in request.path %}active{% endif %}" aria-current="page"
+                        <a style="font-family:Tajawal" class="nav-link {% if 'insert' in request.path %}active{% endif %}" aria-current="page"
                             href="{% url 'employee_register_i18n:employee_insert' %}">{% translate 'Register Employee' %}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link {% if 'list' in request.path %}active{% endif %}"
+                        <a style="font-family:Tajawal" class="nav-link {% if 'list' in request.path %}active{% endif %}"
                             href="{% url 'employee_register_i18n:employee_list' %}">{% translate 'Employee List' %}</a>
                     </li>
                 </ul>
                 <div class="btn-group my-2 my-lg-0">
-                    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+                    <button style="font-family:Tajawal" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
                         aria-expanded="false">
 
                         {% translate 'Language' %}
@@ -47,7 +51,7 @@
                     <ul class="dropdown-menu">
                         {% for language in languages %}
                              <li>
-                                <a class="dropdown-item" href="/{{ language.code }}/">
+                                <a style="font-family:Tajawal" class="dropdown-item" href="/{{ language.code }}/">
                                        {{ language.name_local }}
                                    </a>
                                </li>
@@ -62,8 +66,8 @@
     <div class="container">
         <div class="col-md-10 offset-md-1 mt-5">
             <div class="jumbotron">
-                <h1 class="display-4">Employee Register</h1>
-                <p class="lead font-italic">Bootstrap5/Multi-Lingual/CRUD/PostgreSQL Django project</p>
+                <h1 style="font-family:Tajawal" class="display-4">{% translate 'App Title' %}</h1>
+                <p style="font-family:Tajawal" class="lead font-italic">{% translate 'App Desc' %}</p>
                 <hr class="my-4">
                 {% block content %}
                 {% endblock content %}

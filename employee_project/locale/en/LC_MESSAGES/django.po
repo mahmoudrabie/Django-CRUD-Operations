@@ -3,30 +3,30 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-09 20:24+0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2021-03-09 20:43+0300\n"
+"PO-Revision-Date: 2021-03-09 20:44+0300\n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 2.4.2\n"
 
-#: employee_project/settings.py:117
+#: employee_project/settings.py:107
 msgid "English"
 msgstr "English"
 
-#: employee_project/settings.py:118
+#: employee_project/settings.py:108
 msgid "Arabic"
 msgstr "Arabic"
 
-#: employee_project/settings.py:119
+#: employee_project/settings.py:109
 msgid "Tamil"
 msgstr "Tamil"
 
@@ -42,6 +42,14 @@ msgstr "Employee List"
 msgid "Language"
 msgstr "Language"
 
+#: employee_register/templates/employee_register/base.html:65
+msgid "App Title"
+msgstr "Employee Register"
+
+#: employee_register/templates/employee_register/base.html:66
+msgid "App Desc"
+msgstr "Django App with PostgreSQL+MultiLingual+Bootstrap5"
+
 #: employee_register/templates/employee_register/employee_form.html:25
 #: employee_register/views.py:14
 msgid "Submit"
@@ -53,7 +61,7 @@ msgstr "Back to list"
 
 #: employee_register/templates/employee_register/employee_list.html:8
 msgid "Full Name"
-msgstr ""
+msgstr "Full Name"
 
 #: employee_register/templates/employee_register/employee_list.html:9
 msgid "Mobile"
