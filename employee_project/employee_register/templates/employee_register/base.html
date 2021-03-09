@@ -15,6 +15,41 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Django (CRUD+PostgreSQL+Bootstrap) App</a>
+ 
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link {% if 'insert' in request.path %}active{% endif %}" aria-current="page"
+                            href="{% url 'employee_insert' %}">Register Employee</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link {% if 'list' in request.path %}active{% endif %}"
+                            href="{% url 'employee_list' %}">Employee List</a>
+                    </li>
+                </ul>
+                <div class="btn-group my-2 my-lg-0">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Language
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Arabic</a></li>
+                        <li><a class="dropdown-item" href="#">English</a></li>
+                        <li><a class="dropdown-item" href="#">Urdu</a></li>
+                    </ul>
+                </div>
+ 
+            </div>
+        </div>
+    </nav>
+
     <div class="container">
         <div class="col-md-10 offset-md-1 mt-5">
             <div class="jumbotron">
