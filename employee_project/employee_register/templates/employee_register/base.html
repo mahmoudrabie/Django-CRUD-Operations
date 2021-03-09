@@ -16,6 +16,7 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        {% load i18n %} 
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Django (CRUD+PostgreSQL+Bootstrap) App</a>
  
@@ -37,6 +38,7 @@
                 <div class="btn-group my-2 my-lg-0">
                     <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"
                         aria-expanded="false">
+
                         {% translate 'Language' %}
                     </button>
                     <ul class="dropdown-menu">
@@ -46,7 +48,7 @@
                     
                         {% for language in languages %}
                              <li>
-                                <a class="dropdown-item" href="/{{ lang.code }}/">
+                                <a class="dropdown-item" href="/{{ language.code }}/">
                                        {{ language.name_local }}
                                    </a>
                                </li>
@@ -62,7 +64,7 @@
         <div class="col-md-10 offset-md-1 mt-5">
             <div class="jumbotron">
                 <h1 class="display-4">Employee Register</h1>
-                <p class="lead font-italic">Python Django project for implementing CRUD operations</p>
+                <p class="lead font-italic">Bootstrap5/Multi-Lingual/CRUD/PostgreSQL Django project</p>
                 <hr class="my-4">
                 {% block content %}
                 {% endblock content %}
