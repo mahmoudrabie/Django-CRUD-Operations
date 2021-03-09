@@ -1,10 +1,18 @@
 from django.shortcuts import render, redirect
 from .forms import EmployeeForm
 from .models import Employee
+from django.utils.translation import gettext as _
 from django.utils.translation import get_language, activate
 
 # Create your views here.
-
+def translate(language='ar'):
+    cur_language = get_language()
+    try:
+        activate(language)
+        translated_msg = _(message)
+    finally:
+        activate(cur_language)
+    return translated_msg
 
 def employee_list(request):
     context = {'employee_list': Employee.objects.all()}

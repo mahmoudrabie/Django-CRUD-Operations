@@ -5,12 +5,12 @@
 <table class="table table-borderless">
     <thead class="border-bottom font-weight-bold">
         <tr>
-            <td>Full Name</td>
-            <td>Mobile</td>
-            <td>Position</td>
+            <td>{% translate 'Full Name' %}</td>
+            <td>{% translate 'Mobile' %}</td>
+            <td>{% translate 'Position' %}</td>
             <td>
                 <a href="{% url 'employee_insert' %}" class="btn btn-outline-success">
-                    <i class="fas fa-plus"></i> Add New
+                    <i class="fas fa-plus"></i> {% translate 'Add New' %}
                 </a>
             </td>
         </tr>

@@ -21,4 +21,8 @@ urlpatterns = [
     path('',include('employee_register.urls')),
     path('admin/', admin.site.urls),
     path('employee/',include('employee_register.urls')),
-]
+]   
+
+urlpatterns += i18n_patterns(
+    path('',include('employee_register.urls')),
+) 

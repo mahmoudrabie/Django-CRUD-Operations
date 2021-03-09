@@ -17,6 +17,9 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         {% load i18n %} 
+        {% get_current_language as LANGUAGE_CODE %}
+        {% get_available_languages as LANGUAGES %}
+        {% get_language_info_list for LANGUAGES as languages %}
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Django (CRUD+PostgreSQL+Bootstrap) App</a>
  
@@ -42,10 +45,6 @@
                         {% translate 'Language' %}
                     </button>
                     <ul class="dropdown-menu">
-                        {% get_current_language as LANGUAGE_CODE %}
-                        {% get_available_languages as LANGUAGES %}
-                        {% get_language_info_list for LANGUAGES as languages %}
-                    
                         {% for language in languages %}
                              <li>
                                 <a class="dropdown-item" href="/{{ language.code }}/">
