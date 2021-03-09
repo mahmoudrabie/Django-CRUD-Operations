@@ -1,7 +1,7 @@
 from django.urls import path, include
 from . import views
 
-app_name = 'employee_register'
+app_name = 'employee_register_i18n'
 
 urlpatterns = [
     # get and post req. for insert operation

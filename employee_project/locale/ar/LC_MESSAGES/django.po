@@ -7,35 +7,44 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-09 18:41+0300\n"
+"POT-Creation-Date: 2021-03-09 20:24+0300\n"
 "PO-Revision-Date: 2021-03-09 18:43+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
-"Last-Translator: \n"
-"Language-Team: \n"
 "X-Generator: Poedit 2.4.2\n"
 
-#: employee_project/settings.py:118
+#: employee_project/settings.py:117
 msgid "English"
 msgstr ""
 
-#: employee_project/settings.py:119
+#: employee_project/settings.py:118
 msgid "Arabic"
 msgstr ""
 
-#: employee_project/settings.py:120
+#: employee_project/settings.py:119
 msgid "Tamil"
 msgstr ""
 
-#: employee_register/templates/employee_register/base.html:42
+#: employee_register/templates/employee_register/base.html:34
+msgid "Register Employee"
+msgstr "تسجيل موظف"
+
+#: employee_register/templates/employee_register/base.html:38
+msgid "Employee List"
+msgstr "قائمة الموظفين"
+
+#: employee_register/templates/employee_register/base.html:45
 msgid "Language"
 msgstr "اللغة"
 
-#: employee_register/templates/employee_register/employee_form.html:26
+#: employee_register/templates/employee_register/employee_form.html:25
+#: employee_register/views.py:14
 msgid "Submit"
 msgstr "حفظ"
 

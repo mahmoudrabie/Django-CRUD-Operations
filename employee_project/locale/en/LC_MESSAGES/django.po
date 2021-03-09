@@ -3,66 +3,66 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-03-09 20:24+0300\n"
-"PO-Revision-Date: 2021-03-09 18:45+0300\n"
-"Last-Translator: \n"
-"Language-Team: \n"
-"Language: ta\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 2.4.2\n"
 
 #: employee_project/settings.py:117
 msgid "English"
-msgstr ""
+msgstr "English"
 
 #: employee_project/settings.py:118
 msgid "Arabic"
-msgstr ""
+msgstr "Arabic"
 
 #: employee_project/settings.py:119
 msgid "Tamil"
-msgstr ""
+msgstr "Tamil"
 
 #: employee_register/templates/employee_register/base.html:34
 msgid "Register Employee"
-msgstr ""
+msgstr "Register Employee"
 
 #: employee_register/templates/employee_register/base.html:38
 msgid "Employee List"
-msgstr ""
+msgstr "Employee List"
 
 #: employee_register/templates/employee_register/base.html:45
 msgid "Language"
-msgstr "மொழி"
+msgstr "Language"
 
 #: employee_register/templates/employee_register/employee_form.html:25
 #: employee_register/views.py:14
 msgid "Submit"
-msgstr "சமர்ப்பிக்கவும்"
+msgstr "Submit"
 
 #: employee_register/templates/employee_register/employee_form.html:31
 msgid "Back to list"
-msgstr "மீண்டும் பட்டியலில்"
+msgstr "Back to list"
 
 #: employee_register/templates/employee_register/employee_list.html:8
 msgid "Full Name"
-msgstr "முழு பெயர்"
+msgstr ""
 
 #: employee_register/templates/employee_register/employee_list.html:9
 msgid "Mobile"
-msgstr "கைபேசி"
+msgstr "Mobile"
 
 #: employee_register/templates/employee_register/employee_list.html:10
 msgid "Position"
-msgstr "நிலை"
+msgstr "Position"
 
 #: employee_register/templates/employee_register/employee_list.html:13
 msgid "Add New"
-msgstr "புதியனவற்றை சேர்"
+msgstr "Add New"
