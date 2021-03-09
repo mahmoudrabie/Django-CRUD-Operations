@@ -31,11 +31,11 @@
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link {% if 'insert' in request.path %}active{% endif %}" aria-current="page"
-                            href="{% url 'employee_insert' %}">Register Employee</a>
+                            href="{% url 'employee_register_i18n:employee_insert' %}">{% translate 'Register Employee' %}</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {% if 'list' in request.path %}active{% endif %}"
-                            href="{% url 'employee_list' %}">Employee List</a>
+                            href="{% url 'employee_register_i18n:employee_list' %}">{% translate 'Employee List' %}</a>
                     </li>
                 </ul>
                 <div class="btn-group my-2 my-lg-0">

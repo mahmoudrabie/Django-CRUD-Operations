@@ -5,7 +5,7 @@ from django.utils.translation import gettext as _
 from django.utils.translation import get_language, activate
 
 # Create your views here.
-def translate(language='ar'):
+def translate(language='ar', message=''):
     cur_language = get_language()
     try:
         activate(language)
@@ -20,13 +20,16 @@ def employee_list(request):
 
 
 def employee_form(request, id=0):
+    trans = {
+        'submit': _('Submit')
+    }
     if request.method == "GET":
         if id == 0:
             form = EmployeeForm()
         else:
             employee = Employee.objects.get(pk=id)
             form = EmployeeForm(instance=employee)
-        return render(request, "employee_register/employee_form.html", {'form': form})
+        return render(request, "employee_register/employee_form.html", {'form': form, 'trans': trans})
     else:
         if id == 0:
             form = EmployeeForm(request.POST)

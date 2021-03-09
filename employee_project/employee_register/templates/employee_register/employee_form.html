@@ -23,10 +23,11 @@
         <div class="col-md-8">
             <button type="submit" class="btn btn-success btn-block btn-lg"><i class="fas fa-database"></i>
                 {% translate 'Submit' %}
+                {{ trans.submit }}
             </button>
         </div>
         <div class="col-md-4">
-            <a href="{% url 'employee_list' %}" class="btn btn-secondary btn-block btn-lg">
+            <a href="{% url 'employee_register_i18n:employee_list' %}" class="btn btn-secondary btn-block btn-lg">
                 <i class="fas fa-stream"></i> {% translate 'Back to list' %}
             </a>
         </div>

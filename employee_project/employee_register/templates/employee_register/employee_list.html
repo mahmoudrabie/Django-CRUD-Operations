@@ -9,7 +9,7 @@
             <td>{% translate 'Mobile' %}</td>
             <td>{% translate 'Position' %}</td>
             <td>
-                <a href="{% url 'employee_insert' %}" class="btn btn-outline-success">
+                <a href="{% url 'employee_register_i18n:employee_insert' %}" class="btn btn-outline-success">
                     <i class="fas fa-plus"></i> {% translate 'Add New' %}
                 </a>
             </td>
@@ -22,10 +22,10 @@
                 <td>{{employee.mobile}}</td>
                 <td>{{employee.position}}</td>
                 <td>
-                    <a href="{% url 'employee_update' employee.id %}" class="btn text-secondary px-0">
+                    <a href="{% url 'employee_register_i18n:employee_update' employee.id %}" class="btn text-secondary px-0">
                         <i class="far fa-edit fa-lg"></i>
                     </a>
-                    <form action="{% url 'employee_delete' employee.id %}" method="post" class="d-inline">
+                    <form action="{% url 'employee_register_i18n:employee_delete' employee.id %}" method="post" class="d-inline">
                         {% csrf_token %}
                         <button type="submit" class="btn">
                             <i class="far fa-trash-alt fa-lg text-danger float-right"></i>
