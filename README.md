@@ -14,9 +14,11 @@ git clone https://github.com/mahmoudrabie/Django-CRUD-Operations.git
 https://drive.google.com/file/d/17hq39TE2oCKPHbQOa6gyMS5NmP8xZQWZ/view
 
 ## Step
-(1) Install PostgreSQL and create EmployeeDB
-(2) Clone the repository
-(3) Create then activate the virtual environment
-(4) Install requirements.txt using pip
-(5) Configure settings.py
-(6) Test the app and enjoy!
+- Install PostgreSQL and create EmployeeDB
+- Clone the repository
+- Create then activate the virtual environment
+- Install requirements.txt using pip
+- Configure settings.py
+- Test the app and enjoy!
+
+
